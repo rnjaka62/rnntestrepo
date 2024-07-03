@@ -1,0 +1,4 @@
+for user in tom jack; do
+    useradd -m $user  # Create user with home directory (-m option)
+    echo "password" | passwd --stdin $user  # Set password for the user
+done
